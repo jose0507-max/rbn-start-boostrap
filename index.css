@@ -1,0 +1,261 @@
+
+/* COLORES */
+:root {
+    --dark-color: #2c3e50;
+    --green-color: #1abc9c;
+    --white-color: #ffffff;
+}
+
+/* GENERAL */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+}
+
+.bg-dark-custom {
+    background-color: var(--dark-color);
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/* HEADER */
+.hero-section {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    padding: 100px 0;
+}
+
+.avatar {
+    width: 240px;
+    max-width: 100%;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+/* SECTIONS */
+.portfolio-section,
+.contact-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+}
+
+/* PORTFOLIO */
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.02);
+}
+
+/* ABOUT */
+.about-section {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    padding: 80px 0;
+}
+
+.about-section .section-title {
+    color: var(--white-color);
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.download-btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+/* CONTACT */
+.form-label {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 1.1rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid var(--green-color);
+}
+
+.btn-success-custom {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+}
+
+.btn-success-custom:hover {
+    background-color: #159a80;
+    color: var(--white-color);
+}
+
+/* FOOTER */
+.footer-section {
+    background-color: var(--dark-color);
+    padding: 60px 0;
+}
+
+.footer-section h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.copyright-section {
+    background-color: #1a252f;
+    padding: 25px 0;
+    font-size: 0.9rem;
+}
+
+/* BREAKPOINT 1: Tablets */
+@media (max-width: 991.98px) {
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .about-text {
+        margin-bottom: 20px;
+    }
+}
+
+/* BREAKPOINT 2: Mobile */
+@media (max-width: 767.98px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .avatar {
+        width: 180px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .portfolio-section,
+    .contact-section,
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
+/* BREAKPOINT 3: Small mobile */
+@media (max-width: 575.98px) {
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.7rem;
+    }
+
+    .avatar {
+        width: 150px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .portfolio-img {
+        border-radius: 5px;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .footer-section {
+        padding: 40px 0;
+    }
+}
+.fi{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: pulse 1.4s ease-in-out infinite;
+    transition: 0.5s;
+}
+@keyframes pulse{
+    0%,100%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+}
